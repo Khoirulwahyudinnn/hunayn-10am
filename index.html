@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunayn — Perfume Made by Hand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Playfair+Display:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="nav__brand" href="#">
+        <img src="/assets/logo.svg" width="34" height="32" alt="" />
+        <span>Hunayn</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#">Perfumes</a>
+        <a href="#">Journal</a>
+        <a href="#">Art</a>
+        <a href="#">About</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#"><img src="/assets/magnifying-glass.svg" width="20" height="20" alt="" />Search</a>
+        <a href="#"><img src="/assets/bag.svg" width="20" height="20" alt="" />Bag (0)</a>
+      </div>
+    </header>
+
+    <div id="smooth-wrapper">
+    <div id="smooth-content">
+    <main>
+      <!-- HERO: 2 slides, looping -->
+      <section class="hero">
+        <div class="hero__frame">
+          <div class="hero__slide is-active" data-slide="0">
+            <img class="hero__img" src="/assets/hero-1.png" alt="Three Hunayn perfume bottles on stone with agarwood and flowers" />
+          </div>
+          <div class="hero__slide" data-slide="1">
+            <img class="hero__img" src="/assets/hero-2.png" alt="Bakhoor Extrait perfume bottle" />
+          </div>
+
+          <div class="hero__shade"></div>
+
+          <div class="hero__content" data-slide="0">
+            <div class="hero__text">
+              <p class="eyebrow"><img src="/assets/flower-lotus.svg" width="16" height="16" alt="" />THE COLLECTION</p>
+              <h1 class="hero__title">Perfume Made by Hand, One Material at a Time</h1>
+              <p class="hero__desc" style="width: 256px">Ambergris, frankincense, oud and rose. 500 bottles of each size.</p>
+            </div>
+            <div class="hero__ctas">
+              <a href="#" class="btn btn--light" style="width: 180px">Shop Perfumes</a>
+              <a href="#" class="btn btn--glass" style="width: 180px">Discover the house</a>
+            </div>
+          </div>
+
+          <div class="hero__content" data-slide="1">
+            <div class="hero__text">
+              <p class="eyebrow"><img src="/assets/flower-lotus.svg" width="16" height="16" alt="" />FEATURED</p>
+              <h1 class="hero__title">Bakhoor Extrait</h1>
+              <div class="hero__desc">
+                <p style="width: 280px">Agarwood and resin, held in oil. Warm, dry and close to the skin.</p>
+                <p class="hero__price"><span>Price From:</span><strong>$300</strong></p>
+              </div>
+            </div>
+            <div class="hero__ctas">
+              <a href="#" class="btn btn--light" style="width: 124px">Shop Now</a>
+              <a href="#" class="btn btn--glass" style="width: 124px">View Detail</a>
+            </div>
+          </div>
+
+          <div class="hero__dots" role="tablist" aria-label="Hero slides">
+            <button class="hero__dot" aria-label="Slide 1"><span></span></button>
+            <button class="hero__dot" aria-label="Slide 2"><span></span></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP BY MATERIAL: sticky info + scrolling product cards -->
+      <section class="shop">
+        <div class="shop__inner">
+          <aside class="shop__info">
+            <p class="shop__label">SHOP BY MATERIAL</p>
+            <div class="shop__detail">
+              <div class="shop__copy">
+                <div class="shop__title">
+                  <h2 class="shop__name" dir="auto" data-field="name"></h2>
+                  <p class="shop__material" data-field="material"></p>
+                </div>
+                <p class="shop__desc" data-field="desc"></p>
+              </div>
+              <div class="shop__price">
+                <span data-field="size"></span>
+                <strong data-field="price"></strong>
+              </div>
+            </div>
+            <a href="#" class="btn btn--dark">Add to Bag</a>
+          </aside>
+
+          <div class="shop__cards">
+            <article class="card" data-index="0">
+              <img class="card__img" src="/assets/product-1.png" alt="Darin perfume bottle" />
+              <div class="card__ingredient" aria-hidden="true"><img src="/assets/ingredient-mask.png" width="192" height="331" alt="" /></div>
+              <span class="card__tag"><img src="/assets/star.svg" width="14" height="14" alt="" />FEATURED</span>
+            </article>
+            <article class="card" data-index="1">
+              <img class="card__img" src="/assets/product-2.png" alt="Bakhoor perfume bottle" />
+              <div class="card__ingredient" aria-hidden="true"><img src="/assets/ingredient-mask.png" width="192" height="331" alt="" /></div>
+              <span class="card__tag"><img src="/assets/star.svg" width="14" height="14" alt="" />FEATURED</span>
+            </article>
+            <article class="card" data-index="2">
+              <img class="card__img" src="/assets/product-3.png" alt="Oud perfume bottle" />
+              <div class="card__ingredient" aria-hidden="true"><img src="/assets/ingredient-mask.png" width="192" height="331" alt="" /></div>
+              <span class="card__tag"><img src="/assets/star.svg" width="14" height="14" alt="" />FEATURED</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
